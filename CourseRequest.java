@@ -1,8 +1,7 @@
 package th.ac.tu.cs.assignment.model;
 public class CourseRequest {
 
-
-    private Long ID;
+    private Long id;
     private String date;
     private String prefix;
     private String name;
@@ -32,7 +31,7 @@ public class CourseRequest {
     }
 
     public Long getId() {
-        return ID;
+        return id;
     }
 
     public String getAddress() {
@@ -119,7 +118,7 @@ public class CourseRequest {
     }
 
     public void setId(Long id) {
-        this.ID= id;
+        this.id = id;
     }
 
     public void setLastname(String lastname) {

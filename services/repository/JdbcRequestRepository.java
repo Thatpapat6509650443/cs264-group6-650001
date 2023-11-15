@@ -31,7 +31,7 @@ public class JdbcRequestRepository implements RequestRepository {
                 request.getStudentFirstName(),
                 request.getStudentLastName(),
                 request.getStudentId(),
-                request.getUsername()
+                (request.getUsername() != null) ? request.getUsername() : "defaultUsername"
         );
     }
 
@@ -47,7 +47,8 @@ public class JdbcRequestRepository implements RequestRepository {
                 request.getStudentFirstName(),
                 request.getStudentLastName(),
                 request.getStudentId(),
-                request.getUsername()
+                request.getUsername(),
+                request.getId()
         );
 
     }

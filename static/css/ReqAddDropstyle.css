@@ -1027,6 +1027,37 @@ hr {
   left: 1209px;
 }
 
+/* Cause */
+
+.cause {
+  position: relative;
+}
+
+#cause-text {
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: bold;
+  font-size: 1em;
+  top: 1300px;
+  left: 143px;
+}
+
+#cause-input {
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 450px;
+  width: 450px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+  top: 1350px;
+  left: 143px;
+}
+
 /* Submit */
 
 .SubmitButton button {
@@ -1039,7 +1070,7 @@ hr {
   color: #ffffff;
   letter-spacing: 0.5px;
   position: relative;
-  top: 1200px;
+  top: 1400px;
   left: 550px;
   overflow: hidden;
   cursor: pointer;
@@ -1056,7 +1087,7 @@ hr {
   color: #C3002F;
   letter-spacing: 0.5px;
   position: relative;
-  top: 1200px;
+  top: 1400px;
   left: 550px;
   overflow: hidden;
   cursor: pointer;

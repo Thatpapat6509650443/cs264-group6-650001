@@ -123,7 +123,81 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('form').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const form = document.getElementById('form');
+      const data = new FormData(form);
+      const datasend = {};
 
+      // เพิ่มข้อมูล input ทุกช่องลงใน datasend
+      data.forEach((value, key) => {
+          datasend[key] = value;
+      });
+
+      // เพิ่มข้อมูล ResignList
+      const resignSemester = data.get('resignSemester');
+      if (resignSemester) {
+          datasend.ResignList = [{
+              resignSemester,
+              resignYears: data.get('resignYears'),
+              resignReason: data.get('resignReason'),
+              resignUniversity: data.get('resignUniversity'),
+              resignFaculty: data.get('resignFaculty'),
+              resignBranch: data.get('resignBranch'),
+              resignDebt: data.get('resignDebt')
+          }];
+      } else {
+          datasend.ResignList = [];
+      }
+
+      // เพิ่มข้อมูล OtherList
+      const otherReason = data.get('otherReason');
+      if (otherReason) {
+          datasend.OtherList = [{
+              otherReason
+          }];
+      } else {
+          datasend.OtherList = [];
+      }
+
+      // เพิ่มข้อมูล username จาก Local Storage เข้าไปในชุดข้อมูล
+      datasend.username = localStorage.getItem('username');
+
+      // แสดงข้อมูลที่ได้จากฟอร์มใน Console Log
+      console.log('Send form', datasend);
+
+
+
+
+    try {
+      // ทำการ fetch ข้อมูลไปยังเซิร์ฟเวอร์
+      const myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+
+      const requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: JSON.stringify(Object.fromEntries(data.entries())),
+        redirect: 'follow'
+      };
+
+      const response = await fetch("http://localhost:8080/api/req/create", requestOptions);
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const result = await response.json();
+
+      // แสดงข้อมูลที่ได้จากเซิร์ฟเวอร์ใน Console Log
+      console.log('Result from Server:', result);
+
+    } catch (error) {
+      console.error('Error:', error.message);
+    }
+  });
+});
 
 
 

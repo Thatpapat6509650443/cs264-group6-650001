@@ -257,6 +257,38 @@ a {
   left: 30px;
 }
 
+.see-all-button {
+  position: relative;
+  background-color: #eeeeee;
+  box-shadow: 0px 4px 4px #00000040;
+  border-radius: 20px;
+  width: 70px;
+  height: 30px;
+  left: 850px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.see-all-button:hover {
+  transform: scale(1.1);
+}
+
+#see-all-text {
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: bold;
+  font-size: 0.8em;
+  bottom: 25px;
+  left: 860px;
+  color: #000;
+  z-index: 3;
+  cursor:pointer ;
+  transition: transform 0.3s ease;
+}
+
+
+
 /* Menu */
 
 .screen .menu-group {

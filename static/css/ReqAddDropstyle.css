@@ -57,6 +57,12 @@ a {
   text-decoration: none;
 }
 
+hr {
+  height: 1px;
+  background-color: rgb(241, 241, 243);
+  border: none;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Inter:700,600,400");
 
 
@@ -74,7 +80,7 @@ a {
   background-color: #f1f1f3;
   overflow: hidden;
   width: 1440px;
-  height: 1545px;
+  height: 3100px;
   position: relative;
 }
 
@@ -110,7 +116,7 @@ a {
 .screen .Main {
   position: absolute;
   width: 1000px;
-  height: 1330px;
+  height: 2900px;
   top: 155px;
   left: 67px;
   background-color: #ffffff;
@@ -629,7 +635,289 @@ a {
   gap: 30px;
 }
 
+#addordrop-headtext {
+  position: relative;
+  top: 700px;
+  left: 135px;
+  font-family: 'Kanit';
+  font-weight: bold;
+}
 
+.group1-line1  {
+  display: flex;
+  position: relative;
+  top: 750px;
+  left: 200px;
+  gap: 15px;
+}
+
+.group2-line1 {
+  display: flex;
+  position: relative;
+  top: 800px;
+  left: 200px;
+  gap: 15px;
+}
+
+.group3-line1 {
+  display: flex;
+  position: relative;
+  top: 850px;
+  left: 200px;
+  gap: 15px;
+}
+
+.group4-line1 {
+  display: flex;
+  position: relative;
+  top: 900px;
+  left: 200px;
+  gap: 15px;
+}
+
+.group5-line1 {
+  display: flex;
+  position: relative;
+  top: 950px;
+  left: 200px;
+  gap: 15px;
+}
+
+.group6-line1 {
+  display: flex;
+  position: relative;
+  top: 1000px;
+  left: 200px;
+  gap: 15px;
+}
+
+.group7-line1 {
+  display: flex;
+  position: relative;
+  top: 1050px;
+  left: 200px;
+  gap: 15px;
+}
+
+.group8-line1 {
+  display: flex;
+  position: relative;
+  top: 1100px;
+  left: 200px;
+  gap: 15px;
+}
+
+.group9-line1 {
+  display: flex;
+  position: relative;
+  top: 1150px;
+  left: 200px;
+  gap: 15px;
+}
+
+.group10-line1 {
+  display: flex;
+  position: relative;
+  top: 1200px;
+  left: 200px;
+  gap: 15px;
+}
+
+#addordrop-group1-select1 , #addordrop-group1-select2, 
+#addordrop-group2-select1 , #addordrop-group2-select2, 
+#addordrop-group3-select1 , #addordrop-group3-select2, 
+#addordrop-group4-select1 , #addordrop-group4-select2, 
+#addordrop-group5-select1 , #addordrop-group5-select2,
+#addordrop-group6-select1 , #addordrop-group6-select2, 
+#addordrop-group7-select1 , #addordrop-group7-select2, 
+#addordrop-group8-select1 , #addordrop-group8-select2, 
+#addordrop-group9-select1 , #addordrop-group9-select2, 
+#addordrop-group10-select1 , #addordrop-group10-select2
+{
+  position: relative;
+  bottom: 10px;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 90px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+}
+
+#addordrop-group1-head1 , #addordrop-group2-head1,
+#addordrop-group3-head1 , #addordrop-group4-head1,
+#addordrop-group5-head1 , #addordrop-group6-head1,
+#addordrop-group7-head1 , #addordrop-group8-head1,
+#addordrop-group9-head1 , #addordrop-group10-head1
+{
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: normal;
+}
+
+#addordrop-group1-head2 , #addordrop-group2-head2,
+#addordrop-group3-head2 , #addordrop-group4-head2,
+#addordrop-group5-head2 , #addordrop-group6-head2,
+#addordrop-group7-head2 , #addordrop-group8-head2,
+#addordrop-group9-head2 , #addordrop-group10-head2
+{
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: normal;
+}
+
+.group1-line2 input {
+  position: relative;
+  top: 770px;
+  left: 200px;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 120px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+}
+
+.group2-line2 input {
+  position: relative;
+  top: 820px;
+  left: 200px;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 120px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+}
+
+.group3-line2 input {
+  position: relative;
+  top: 870px;
+  left: 200px;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 120px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+}
+
+.group4-line2 input {
+  position: relative;
+  top: 920px;
+  left: 200px;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 120px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+}
+
+.group5-line2 input {
+  position: relative;
+  top: 970px;
+  left: 200px;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 120px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+}
+
+.group6-line2 input {
+  position: relative;
+  top: 1020px;
+  left: 200px;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 120px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+}
+
+.group7-line2 input {
+  position: relative;
+  top: 1070px;
+  left: 200px;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 120px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+}
+
+.group8-line2 input {
+  position: relative;
+  top: 1120px;
+  left: 200px;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 120px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+}
+
+.group9-line2 input {
+  position: relative;
+  top: 1170px;
+  left: 200px;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 120px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+}
+
+.group10-line2 input {
+  position: relative;
+  top: 1220px;
+  left: 200px;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 120px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+}
 
 .screen .switch {
   position: absolute;
@@ -739,6 +1027,42 @@ a {
   left: 1209px;
 }
 
+/* Submit */
+
+.SubmitButton button {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 1px 5px;
+  background: #C3002F;
+  border: #ffffff solid 3px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  position: relative;
+  top: 1200px;
+  left: 550px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+.SubmitButton button:hover {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 1px 5px;
+  background: none;
+  border: #C3002F solid 3px;
+  color: #C3002F;
+  letter-spacing: 0.5px;
+  position: relative;
+  top: 1200px;
+  left: 550px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 0;
+}
+
 
 /* Menu */
 
@@ -748,6 +1072,7 @@ a {
   height: 826px;
   top: 100px;
   left: 218px;
+
 }
 
 .screen .menutab {
@@ -758,6 +1083,7 @@ a {
   left: 0;
   background-color: #ffffff;
   box-shadow: 0px 4px 4px #00000040;
+
 }
 
 .screen .logout {
@@ -1194,3 +1520,4 @@ a {
   font-weight: normal;
   font-size: 0.8em;
 }
+

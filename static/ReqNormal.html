@@ -56,10 +56,13 @@
                 </div>
               </a>
             </div>
-          </div><!--Switch-->
+          </div>
+          <!--Switch-->
 
-        </div><!--header L14-->
-      </div><!--group-main L13-->
+        </div>
+        <!--header L14-->
+      </div>
+      <!--group-main L13-->
 
       <form id="form">
         <div class="date-all">
@@ -130,9 +133,9 @@
             </select>
           </div>
 
-          <div class="Faculty">
-            <label id="faculty-text" for="faculty-field">สาขาวิชา</label>
-            <select id="faculty-field" name="studyField">
+          <div class="Branch">
+            <label id="branch-text" for="branch-field">สาขาวิชา</label>
+            <select id="branch-field" name="studentBranch">
               <option value="">-</option>
               <option>สาขาวิชาวิทยาการคอมพิวเตอร์</option>
               <option>สาขาวิชาสถิติ</option>
@@ -220,81 +223,96 @@
         </div>
         <!--Address L162-->
 
-        <div class="subject-all">
+        <div class="subject-all data-container">
           <label id="subject-all-topic">มีความประสงค์จะยื่นคำร้องเรื่อง</label>
-          <div class="subject-select">
+          <div class="subject-select data-container">
             <div class="subject-select-1">
-              <input type="radio" name="radio-1" onclick="showDiv('resign');">
+              <input type="radio" name="main-topic" value="ขอลาออก" onclick="showDiv('resign');">
               <label>ขอลาออก</label>
             </div>
 
             <div class="subject-select-2">
-              <input type="radio" name="radio-1" onclick="showDiv('deferred');">
-              <label>ขอจดทะเบียนศึกษารายวิชาข้ามโครงการ</label>
+              <input type="radio" name="main-topic" onclick="showDiv('deferred');">
+              <label>ขอผ่อนพันค่าจดทะเบียนเรียน</label>
             </div>
 
             <div class="subject-select-3">
-              <input type="radio" name="radio-1" onclick="showDiv('other');">
+              <input type="radio" name="main-topic" value="อื่นๆ" onclick="showDiv('other');">
               <label>อื่นๆ</label>
             </div>
           </div>
 
-          <div id="resign" style="display: none;">
+          <div class="data-container" id="resign" style="display: none;">
             <div class="resign-line1">
               <label id="resign-text-1" for="resign-input-1">- ขอลาออกในภาคเรียนที่</label>
-              <input id="resign-input-1" type="text">
+              <input id="resign-input-1" type="text" name="resignSemester">
               <label id="resign-text-2" for="resign-input-2">ปีการศึกษา</label>
-              <input id="resign-input-2" type="tel" maxlength="4">
+              <input id="resign-input-2" type="tel" maxlength="4" name="resignYears">
             </div>
 
             <div class="resign-line2">
               <label id="resign-text-3">- เหตุผลเพราะ</label>
-              <input id="resign-input-3" type="radio" name="radio-2" onclick="showDivreason('resign-reason-radio-1')">
+              <input id="resign-input-3" type="radio" name="resignReason" value="ศึกษาต่อที่ ม.ธรรมศาสตร์"
+                onclick="showDivreason('resign-reason-radio-1')">
               <label id="resign-text-4">ศึกษาต่อที่ ม.ธรรมศาสตร์</label>
-              <input id="resign-input-4" type="radio" name="radio-2" onclick="showDivreason('resign-reason-radio-2')">
+              <input id="resign-input-4" type="radio" name="resignReason" value="ศึกษาต่อที่ มหาวิทยาลัยอื่น"
+                onclick="showDivreason('resign-reason-radio-2')">
               <label id="resign-text-5">ศึกษาต่อที่ มหาวิทยาลัยอื่น คือ</label>
             </div>
 
             <div id="resign-reason-radio-1" style="display: none;">
               <label id="resign-reason-text-1">คณะ</label>
-              <input id="resign-reason-input-1" type="text">
+              <input id="resign-reason-input-1" type="text" name="resignFaculty">
               <label id="resign-reason-text-2" for="resign-reason-input-2">สาขา</label>
-              <input id="resign-reason-input-2" type="text">
+              <input id="resign-reason-input-2" type="text" name="resignBranch">
             </div>
 
             <div id="resign-reason-radio-2" style="display: none;">
               <label id="resign-reason-text-3">มหาวิทยาลัย</label>
-              <input id="resign-reason-input-3" type="text">
+              <input id="resign-reason-input-3" type="text" name="resignUniversity">
               <label id="resign-reason-text-4" for="resign-reason-input-4">คณะ</label>
-              <input id="resign-reason-input-4" type="text">
+              <input id="resign-reason-input-4" type="text" name="resignFaculty">
               <label id="resign-reason-text-5" for="resign-reason-input-5">สาขา</label>
-              <input id="resign-reason-input-5" type="text">
+              <input id="resign-reason-input-5" type="text" name="resignBranch">
             </div>
-
+            <br>
             <div class="resign-line3">
               <label id="resign-text-6">- มีหนี้ค้างกับ มธ./หน่วยงานภายในมธ. หรือไม่ ถ้ามีโปรดระบุ</label>
-              <input id="resign-input-6" type="text">
+              <input id="resign-input-6" type="text" name="resignDebt">
             </div>
             <div class="resign-line4">
-              <input id="resign-input-7" type="radio" value="-">
+              <input id="resign-input-7" type="radio" value="-" name="resignDebt">
               <label id="resign-text-7">หากไม่มี</label>
+              <!--ทำscriptเพิ่มให้ใส่ได้ช่องเดียว-->
             </div>
           </div>
           <!--resign-->
-
           <div id="deferred" style="display: none;">
-            <label id="deferred-text-1" for="deferred-input-1">รายละเอียด</label>
-            <input id="deferred-input-1" type="text">
+            <div id="deferred-line1">
+              <label id="deferred-text-1" for="deferred-input-1">ในภาคเรียนที่</label>
+              <input id="deferred-input-1" type="text">
+              <label id="deferred-text-2" for="deferred-input-2">ปีการศึกษา</label>
+              <input id="deferred-input-2" type="text">
+            </div>
+            <div id="deferred-line2">
+              <label id="deferred-text-3" for="deferred-input-3">คาดว่าจะสามารถชำระเงินได้ภายในเดือน</label>
+              <input id="deferred-input-3" type="text">
+              <label id="deferred-text-4" for="deferred-input-4">พ.ศ.</label>
+              <input id="deferred-input-4" type="text">
+            </div>
+            <div id="deferred-line3">
+              <label id="deferred-text-5">(ทั้งนี้ต้องไม่มีหนี้ค้างชำระค่าจดทะเบียนในภาคเรียนก่อนหน้า)</label>
+            </div>
           </div>
 
-          <div id="other" style="display: none;">
+          <div class="data-container" id="other" style="display: none;">
             <label id="other-text-1" for="other-input-1">ยื่นคำร้องเรื่อง</label>
-            <input id="other-input-1" type="text">
+            <input id="other-input-1" type="text" name="otherReason">
           </div>
         </div>
 
         <div class="cause">
-          <label id="cause-text">เหตุผลที่ขอ เพิ่ม/ถอน รายวิชา</label>
+          <label id="cause-text">เหตุผลที่ยื่นคำร้อง</label>
           <input type="text" id="cause-input" name="cause" placeholder="เหตุผล...">
         </div>
 
@@ -305,7 +323,7 @@
         </div>
 
         <div class="SubmitButton">
-        <button class="submit" id="submit-button" onclick="return validateFile()">ยืนยันคำร้อง</button>
+          <button class="submit" id="submit-button" onclick="return validateFile()">ยืนยันคำร้อง</button>
         </div>
       </form>
 
@@ -324,35 +342,34 @@
             </a>
           </div>
 
-        <div class="menu-button">
+          <div class="menu-button">
             <a href="/ReqNormal.html">
               <div class="menu1-button"></div>
               <div class="menu1-text">ยื่นคำร้อง</div>
-              <img class="menu1-file-solid-red" 
-                src="https://c.animaapp.com/lw7Chhpa/img/file-solid-red-1@2x.png" />
+              <img class="menu1-file-solid-red" src="https://c.animaapp.com/lw7Chhpa/img/file-solid-red-1@2x.png" />
+            </a>
+
+            <a href="/EditReq.html">
+              <div class="menu2-button"></div>
+              <div class="menu2-text">แก้ไขคำร้อง</div>
+              <img class="menu2-file-pen-solid-red"
+                src="https://c.animaapp.com/lw7Chhpa/img/file-pen-solid-red-1@2x.png" />
             </a>
 
             <a href="">
-            <div class="menu2-button"></div>
-            <div class="menu2-text">แก้ไขคำร้อง</div>
-            <img class="menu2-file-pen-solid-red"
-              src="https://c.animaapp.com/lw7Chhpa/img/file-pen-solid-red-1@2x.png" />
+              <div class="menu3-button"></div>
+              <div class="menu3-text">ติดตามสถานะคำร้อง</div>
+              <img class="menu3-thumbtack-solid-red"
+                src="https://c.animaapp.com/lw7Chhpa/img/thumbtack-solid-red-1@2x.png" />
             </a>
 
             <a href="">
-            <div class="menu3-button"></div>
-            <div class="menu3-text">ติดตามสถานะคำร้อง</div>
-            <img class="menu3-thumbtack-solid-red"
-              src="https://c.animaapp.com/lw7Chhpa/img/thumbtack-solid-red-1@2x.png" />
+              <div class="menu4-button"></div>
+              <div class="menu4-text">พบปัญหา</div>
+              <img class="menu4-circle-question"
+                src="https://c.animaapp.com/lw7Chhpa/img/circle-question-regular-red-1@2x.png" />
             </a>
-
-            <a href="">
-            <div class="menu4-button"></div>
-            <div class="menu4-text">พบปัญหา</div>
-            <img class="menu4-circle-question"
-              src="https://c.animaapp.com/lw7Chhpa/img/circle-question-regular-red-1@2x.png" />
-            </a>
-        </div>
+          </div>
 
           <div class="menu-text-emoji">
             <!-- แสดงชื่อนักศึกษา -->

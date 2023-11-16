@@ -369,18 +369,18 @@ hr {
   border: none;
 }
 
-.Faculty {
+.Branch {
   position: relative;
   top: 430px;
   left: 200px;
 }
 
-#faculty-text {
+#branch-text {
   font-family: 'Kanit';
   font-size: 1em;
 }
 
-#faculty-field {
+#branch-field {
   font-family: 'Kanit';
   font-weight: normal;
   font-size: 0.9em;
@@ -887,6 +887,30 @@ hr {
   left: 265px;
 }
 
+#resign-reason-text-5 {
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 1em;
+  top: 840px;
+  left: 275px;
+}
+
+#resign-reason-input-5 {
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 270px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+  top: 833px;
+  left: 290px;
+}
+
 .resign-line3 {
   display: flex;
 }
@@ -942,6 +966,21 @@ hr {
   position: relative;
 }
 
+.deferred-line1 {
+  display: flex;
+  gap: 30px;
+}
+
+.deferred-line2 {
+  display: flex;
+  gap: 30px;
+}
+
+.deferred-line3 {
+  display: flex;
+  gap: 30px;
+}
+
 #deferred-text-1 {
   position: relative;
   font-family: 'Kanit';
@@ -956,8 +995,8 @@ hr {
   font-family: 'Kanit';
   font-weight: normal;
   font-size: 0.9em;
-  max-width: 450px;
-  width: 450px;
+  max-width: 150px;
+  width: 150px;
   background: #fff;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
   color: #000000;
@@ -966,6 +1005,91 @@ hr {
   top: 750px;
   left: 225px;
 }
+
+#deferred-text-2 {
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 1em;
+  top: 750px;
+  left: 300px;
+}
+
+#deferred-input-2 {
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 150px;
+  width: 150px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+  top: 750px;
+  left: 305px;
+}
+
+#deferred-text-3 {
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 1em;
+  top: 800px;
+  left: 205px;
+}
+
+#deferred-input-3 {
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 150px;
+  width: 150px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+  top: 800px;
+  left: 225px;
+}
+
+#deferred-text-4 {
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 1em;
+  top: 800px;
+  left: 300px;
+}
+
+#deferred-input-4 {
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 0.9em;
+  max-width: 150px;
+  width: 150px;
+  background: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  color: #000000;
+  padding: 10px;
+  border: none;
+  top: 800px;
+  left: 300px;
+}
+
+#deferred-text-5 {
+  position: relative;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 1em;
+  top: 850px;
+  left: 205px;
+}
+
 
 #other {
   position: relative;
@@ -1030,14 +1154,14 @@ hr {
 /* Submit */
 
 .SubmitButton button {
-  font-family: 'Kanit' , sans-serif;
-  font-size:  1em;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1em;
   font-weight: normal;
   padding: 1px 5px;
   background: #C3002F;
-  border: #ffffff solid 2px;
+  border: #ffffff solid 3px;
   color: #ffffff;
-  letter-spacing: 0.5px; 
+  letter-spacing: 0.5px;
   position: relative;
   top: 1200px;
   left: 550px;
@@ -1047,14 +1171,14 @@ hr {
 }
 
 .SubmitButton button:hover {
-  font-family: 'Kanit' , sans-serif;
-  font-size:  1em;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1em;
   font-weight: normal;
   padding: 1px 5px;
-  background: #6a031a;
-  border: #ffffff solid 2px;
-  color: #ffffff;
-  letter-spacing: 0.5px; 
+  background: none;
+  border: #C3002F solid 3px;
+  color: #C3002F;
+  letter-spacing: 0.5px;
   position: relative;
   top: 1200px;
   left: 550px;
@@ -1081,7 +1205,7 @@ hr {
 #attachment-input {
   position: relative;
   font-family: 'Kanit';
-  font-size:  1em;
+  font-size: 1em;
   font-weight: normal;
   top: 1100px;
   left: 143px;
